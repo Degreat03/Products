@@ -1,0 +1,137 @@
+#output{
+    white-space: pre-line;
+}
+
+
+#result{
+    white-space: pre-line;
+}
+
+
+.item{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    align-content: center;
+    justify-content: center;
+
+}
+
+body, html{
+    background-color: hsl(0, 6%, 93%);
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif, serif;
+    overflow-x: hidden;
+}
+
+h2{
+    text-align: center;
+    margin: 40px 0;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    background-color: hsl(0, 100%, 99%);
+    width: 50rem;
+    height: 40rem;
+    margin: 40px auto;
+    overflow-y: auto;
+    padding: 70px;
+    border-radius: 10px;
+}
+
+label{
+    font-size: 13px;
+}
+
+.check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.check1, .check2, .check3, .check4{
+    margin-right: 20px;
+}
+
+.check input{
+    cursor: pointer;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+#searchBox{
+    border: 0;
+    background-color: hsla(0, 11%, 91%, 0.815);
+    padding: 15px;
+    width: 97%;
+    border-radius: 20px;
+    outline: none;
+}
+
+button{
+    border: 0;
+    background-color: hsl(240, 86%, 49%);
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+span{
+    background-color: hsla(0, 2%, 72%, 0.815);
+    width: 100%;
+    padding: 10px;
+}
+
+@media (max-width: 600px){
+    .container{
+        width: 15rem;
+    }
+
+    .check{
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .controls{
+        flex-direction: column;
+    }
+
+    #searchBox{
+        margin-left: 20px;
+    }
+
+    button{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .item{
+        grid-template-columns: 150px;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 30rem;
+    }
+
+   .check1, .check2, .check3, .check4{
+    margin-right: 5px;
+   }
+}
+
